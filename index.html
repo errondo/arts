@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <title>art gallary</title>
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: "mech";
+            src: url(./Mechsuit.otf);
+        }
+        body {
+            margin: 75px 0 0 0;
+            overflow-x: hidden;
+        }
+        .container-fluid {
+            padding: 0px;
+        }
+        h1 {
+            text-align: center;
+            font-family: "mech";
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        .bye{
+            margin: 0;
+            font-size: 25px;
+            color: black;
+        }
+        .w {
+            width: 250px;
+            border-radius: 15px;
+        }
+        .intro {
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .intp {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        .cont {
+            width: 260px;
+            padding: 10px;
+        }
+        .bar {
+            background-color: blueviolet;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            position: absolute; 
+            top: 0px;
+            height: 73px
+        }
+        .content{
+            max-width: 100%;
+            min-width: 300px;
+            margin: 0 auto;
+        }
+        .elem{
+            margin: 20px auto;
+            max-width: 100%;
+            min-width: 200px;
+            padding: 15px;
+            background: linear-gradient(180deg, transparent , lightgrey 90%, transparent 100% );
+        }
+        .anim {
+            animation: scrrevtop 1000ms ease-in;
+        }
+        #bg{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            border: 2px solid;
+            height: 85px;
+        }
+        .ru {
+            background-color: blueviolet;
+            margin: 0 auto;
+            height: 110px;
+        }
+        .check{
+            margin: 0 auto;
+            width: 200px;
+        }
+        @keyframes scrrevtop {
+            0%{
+                opacity: 0%;
+                margin-top: 40px;
+            }
+            20%{
+                opacity: 0%;
+                margin-top: 40px;
+            }
+            100%{
+                opacity: 100%;
+                margin-top: 20px;
+            }
+        }
+        @keyframes objmove {
+            0%{
+                left: -20px;
+            }
+            100%{
+                left: 4000px;
+            }
+        }
+    </style>
+    <div class="container-fluid">
+    <div class="bar">
+        <h1 id="titl" class="anim">Art Gallery</h1>
+    </div>
+    <div class="intro anim">
+        <div class="cont"><p class="intp">here in this art gallary u will see new, old and beatiful arts so have fun.</p>
+        </div>
+</div>
+<div class="content">
+    <div class="elem row anim"><img class="col-xs-6 w img-responsive" src="./imgs/photo_1_2023-09-24_19-37-53.jpg" alt="">
+    <div class="col-xs-6">
+        <h3>sun set scene</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, repudiandae! Laboriosam illum voluptatibus, itiis delectus fuga temporibus ullam, sunt necessitatibus ipsa architecto libero aliquam!</p>
+    </div></div>
+    <div class="elem row anim"><div class="col-xs-6">
+        <h3>Winter water fall</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus cupiditate esse voluptatibus velit molestiae jkdfhuidhfjgdh dringodlir onsequatur optio aut.</p>
+    </div>
+        <img class="col-xs-6 w img-responsive" src="./imgs/photo_2_2023-09-24_19-37-53.jpg" alt="">
+    </div>
+    <div class="elem row anim"><img class="w col-xs-6 img-responsive" src="./imgs/photo_3_2023-09-24_19-37-53.jpg" alt="">
+    <div class="col-xs-6">
+        <h3>flower forest</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum labore minus ullam? Soluta ipsum corporis qui iure dolores itaque repellat quam non! Hic nam minima modi maxime impedit asperiores.</p>
+    </div>
+    </div>
+    <div class="elem row anim"><div class="col-xs-6">
+        <h3>forest water fall</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, reprehenderit illo facere ipsum voluptate, repellat reiciendis asperiores obcaecati dignissimos delectus iusto temporibus sunt rem velit neque veritatis optio accusantium possimus.</p>
+    </div>
+        <img class="w col-xs-6 img-responsive" src="./imgs/photo_4_2023-09-24_19-37-53.jpg" alt="">
+    </div>
+    <div class="elem row anim"><img class="w col-xs-6 img-responsive" src="./imgs/photo_5_2023-09-24_19-37-53.jpg" alt="">
+    <div class="col-xs-6">
+        <h3>droplet abstract</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae accusantium cumque, officiis fugiat earum porro ullam saepe repellat culpa incidunt, nesciunt sequi a asperiores omnis ea quas optio veniam quisquam.</p>
+    </div>
+    </div>
+    <div class="elem row anim">
+        <div class="col-xs-6">
+        <h3>seaside sunset</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora enim eaque, quo, exercitationem libero adipisci tenetur ratione, facere odit distinctio consequatur nisi! Alias mollitia quisquam temporibus, rem vitae minus voluptates?</p>
+    </div>
+    <img src="./imgs/photo_6_2023-09-24_19-37-53.jpg" alt="" class="w col-xs-6 img-responsive">
+    </div>
+</div>
+<div class="ru">
+    <p class="bye text-center" id="foot">THANK YOU FOR THE VIEW</p><br/>
+    <div class="check">
+        <label for="sat">where u satisfied
+        <input type="checkbox" id="sat"></label><br>
+        <button id="submi">submit</button>
+    </div>
+</div>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
